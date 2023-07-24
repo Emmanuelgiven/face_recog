@@ -1,0 +1,8 @@
+table = "<table>\n"
+table += "<tr><th>Name</th><th>Confidence</th><th>Timestamp</th></tr>\n"
+for row in data:
+    table += f"<tr><td>{row[0]}</td><td>{row[1]}</td><td>{row[2]}</td></tr>\n"
+table += "</table>"
+
+# Print the HTML table to the console
+print(table)
